@@ -1,0 +1,64 @@
+
+.areaNavLateral { grid-area: area-nav;}
+.areaUsuario {grid-area: area-user;}
+.areaPlan { grid-area: area-plan; }
+.areaProyectos { grid-area: area-proyectos; }
+.areaDashboard { grid-area: area-dashboard; }
+
+.grid-container {
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'area-nav area-user area-user area-user' 
+    'area-nav area-plan area-plan area-plan' 
+    'area-nav area-proyectos area-dashboard area-dashboard' 
+    'area-nav area-proyectos area-dashboard area-dashboard' 
+    'area-nav area-proyectos area-dashboard area-dashboard';
+    gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-areas: 
+        'area-proyecto' 
+        'area-html' 
+        'area-css' 
+        'area-js'
+        'area-resultado';
+    }
+
+    .div-resultado{
+        height: 240px;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 740px) {
+    .div-resultado{
+        padding-bottom: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .div-resultado{
+        padding-bottom: 20%;
+    }
+}
+
+@media (max-width: 460px) {
+    .div-resultado{
+        padding-bottom: 28%;
+        padding-right: 10%;
+    }
+    .div-areaHtml{
+        padding-right: 10%;
+    }
+
+    .div-areaCss{
+        padding-right: 10%;
+    }
+
+    .div-areaJs{
+        padding-right: 10%;
+    }
+}

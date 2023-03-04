@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./work-area.component.css']
 })
 export class WorkAreaComponent {
-
+  
+  
 }
