@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "monaco-editor": "^0.36.1",
-    "ngx-monaco-editor": "^8.0.0"
-  }
-}
