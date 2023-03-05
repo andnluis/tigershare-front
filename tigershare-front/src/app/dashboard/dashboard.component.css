@@ -16,6 +16,7 @@
 .areaDashboard{ 
     grid-area: area-dashboard; 
     padding-right: 60px;
+    padding-bottom: 6%;
 }
 
 .grid-container {
@@ -29,8 +30,6 @@
     'area-proyectos area-dashboard area-dashboard';
     gap: 10px;
 }
-
-
 
 @media (max-width: 768px) {
     .grid-container {
@@ -63,78 +62,6 @@
     }
 }
 
-
-
-/*
-/*INICIO botones nav*
-.item-nav{
-    /*border: 1px solid grey;*
-    color: #ffffff26;
-    font-weight: 500;
-    border-radius: 0px 20px 20px 0px;
-    margin: 5px 15px 5px 0px;
-    text-align: start;
-    width: 150px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.item-nav:hover{
-    color: white;
-    background-color: rgba(247, 108, 108, 0.685);
-}
-
-.item-nav-active{
-    color: red;
-    background-color: rgba(231, 69, 69, 0.315);
-}
-/*FIN botones nav*
-.input-icon {
-    color: #191919;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-body {
-    min-height: 100vh;
-    background-color: #fff;/*#fff*
-}
-
-.nav-link {
-    font-size: 1.25em;
-}
-
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-    background-color: #ffffff26;/*ffffff26*
-}
-
-.dropdown-menu {
-    background-color: #7952b3;
-}
-
-.dropdown-item:active,
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: #ffffff26;
-}
-
-#menu-btn {
-    background-color: white;/*#7952b3*
-    color: #fff;
-}
-
-#menu-btn:focus {
-    box-shadow: 0 0 0 0.25rem #7952b344;
-}
-*/
-
 .navbar-lateral {
     width: 250px;
     height: 100%;
@@ -142,7 +69,7 @@ body {
     margin-left: -300px;
     background-color: white;/*#7952b3*/
     transition: 0.4s;
-    border: 1px solid grey;
+    border: 1px solid #040B25;
 }
 
 #my_container {
