@@ -4,20 +4,19 @@
         <div class="grid-container" style="color: white; padding-bottom: 10%;">
             <div class="areaHtml">
                 <div class="mb-3 div-areaHtml">
-                    <label for="htmlTextarea" class="form-label">HTML</label>
-                    <textarea class="form-control w-100" id="htmlTextarea" rows="5"></textarea>
+                    <ngx-monaco-editor #html [options]="optionsEditorHtml" [(ngModel)]="codeHTML" (ngModelChange)="onCodeChange()"></ngx-monaco-editor>
                 </div>
             </div>
             <div class="areaCss">
                 <div class="mb-3 div-areaCss">
                     <label for="cssTextarea" class="form-label">CSS</label>
-                    <textarea class="form-control w-100" id="cssTextarea" rows="5"></textarea>
+                    <ngx-monaco-editor #css [options]="optionsEditorCss" [(ngModel)]="codeCSS" (ngModelChange)="onCodeChange()"></ngx-monaco-editor>
                 </div>
             </div>
             <div class="areaJs">
                 <div class="mb-3 div-areaJs">
                     <label for="jsTextarea" class="form-label">JavaScript</label>
-                    <textarea class="form-control w-100" id="jsTextarea" rows="5"></textarea>
+                    <ngx-monaco-editor #js [options]="optionsEditorJs" [(ngModel)]="codeJS" (ngModelChange)="onCodeChange()"></ngx-monaco-editor>
                 </div>
             </div>
 
@@ -63,7 +62,7 @@
             <div class="areaResultado">
                 <div class="mb-3 div-resultado">
                     <label for="resultadoTextarea" class="form-label">Resultado</label>
-                    <iframe class="form-control h-100" id="resultadoTextarea" srcdoc="" frameborder="0"></iframe>
+                    <iframe #resultCode srcdoc="" class="form-control h-100" id="resultadoTextarea" frameborder="0"></iframe>
                 </div>
             </div><!--FIN RESULTADO-->
         </div>

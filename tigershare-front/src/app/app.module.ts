@@ -13,6 +13,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { PricesComponent } from './prices/prices.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkAreaComponent } from './work-area/work-area.component';
+import { MonacoEditorModule } from 'ngx-monaco-editor';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WorkAreaComponent } from './work-area/work-area.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, 
+    MonacoEditorModule.forRoot()
   ],
   providers: [],//para los servicios
   bootstrap: [AppComponent]
