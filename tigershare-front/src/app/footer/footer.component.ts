@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  isdashboard: boolean = false;
-  isWordArea: boolean = false;
-  ocultarFooter: boolean = this.isdashboard || this.isWordArea;
+
+  constructor(public router: Router) {}
+
 }

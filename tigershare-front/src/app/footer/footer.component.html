@@ -1,5 +1,5 @@
 
-<footer *ngIf="ocultarFooter" id="sticky-footer" class="flex-shrink-0 py-4">
+<footer id="sticky-footer" class="flex-shrink-0 py-4" *ngIf="router.url !== '/dashboard' && router.url !== '/work-area'">
     <div class="d-flex justify-content-around align-items-center">
         <div>
             <h6>Contactanos</h6>
