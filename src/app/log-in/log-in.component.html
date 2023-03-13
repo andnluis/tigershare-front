@@ -4,14 +4,14 @@
             <h1 class="text-center mt-4 mb-4">Iniciar Sesión</h1>
             <div class="mb-3">
                 <label for="emailInput" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="desarrollador@gmail.com">
+                <input type="email" name="email" class="form-control" id="emailInput" placeholder="desarrollador@gmail.com" required>
             </div>
             <div class="mb-3">
                 <label for="passwordInput" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="passwordInput" placeholder="************">
+                <input type="password" name="password" class="form-control" id="passwordInput" placeholder="************" required>
             </div>
             <div class="mb-3 mt-4 text-center">
-                <button type="" class="btn btn-login">Ingresar</button>
+                <button type="" class="btn btn-login" (click)="iniciarSesion()">Ingresar</button>
             </div>
             <div class="contenedor-grip py-5 d-flex align-content-center justify-content-between">
                 <a href="" class="btn btn-ref">

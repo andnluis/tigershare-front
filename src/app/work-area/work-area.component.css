@@ -1,28 +1,36 @@
 
-.areaHtml { grid-area: area-html; }
-.areaCss { grid-area: area-css; }
-.areaJs { grid-area: area-js; }
-.areaProyecto { grid-area: area-proyecto; }
-.areaResultado { grid-area: area-resultado; }
+.areaHtml { 
+    grid-area: area-html;
+    width: 700px;
+}
+
+.areaCss { 
+    grid-area: area-css; 
+    width: 700px;
+}
+
+.areaJs { 
+    grid-area: area-js; 
+    width: 700px;
+}
+
+.areaResultado { 
+    grid-area: area-resultado; 
+    width: 700px;
+    height: 440px;
+}
+
+.areaProyecto { 
+    grid-area: area-proyecto; 
+    width: 700px;
+}
 
 .grid-container {
     display: grid;
+    color: white;
     grid-template-areas: 'area-html area-proyecto' 'area-css area-resultado' 'area-js area-resultado';
     gap: 10px;
-    padding: 10px;
-    /*background-color: #2196F3;*/
 }
-
-.div-resultado{
-    height: 325px;
-}
-/*
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}*/
 
 @media (max-width: 1000px) {
     .grid-container {
@@ -34,47 +42,38 @@
         'area-resultado';
     }
 
-    .div-resultado{
+    .areaResultado{
         height: 240px;
         padding-bottom: 10%;
     }
 }
 
 @media (max-width: 740px) {
-    .div-resultado{
+    .areaResultado{
         padding-bottom: 15%;
     }
 }
 
 @media (max-width: 600px) {
-    .div-resultado{
+    .areaResultado{
         padding-bottom: 20%;
     }
 }
 
 @media (max-width: 460px) {
-    .div-resultado{
+    .areaResultado{
         padding-bottom: 28%;
         padding-right: 10%;
     }
-    .div-areaHtml{
+    .areaHtml{
         padding-right: 10%;
     }
 
-    .div-areaCss{
+    .areaCss{
         padding-right: 10%;
     }
 
-    .div-areaJs{
+    .areaJs{
         padding-right: 10%;
     }
 }
-
-/*
-
-
-@media (max-width: 500px) {
-    .container-fluid{
-        background-color: blue;
-    }
-}*/

@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { NgxMonacoEditorConfig } from 'ngx-monaco-editor';
 
 @Component({
   selector: 'app-work-area',

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -30,9 +30,10 @@ import { MonacoEditorModule } from 'ngx-monaco-editor';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule, 
-    MonacoEditorModule.forRoot()
+    MonacoEditorModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],//para los servicios
   bootstrap: [AppComponent]
